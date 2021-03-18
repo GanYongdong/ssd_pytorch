@@ -159,6 +159,7 @@ class SSD(nn.Module):
         out = self.vgg[34](out)
         feature_map_2 = out
         loc_2 = self.feature_map_loc_2(feature_map_2).permute((0,2,3,1)).contiguous()
+        loc_2 = self.feature_map_loc_2(feature_map_2).permute((0,2,3,1)).contiguous()
         conf_2 = self.feature_map_conf_2(feature_map_2).permute((0,2,3,1)).contiguous()
         out = self.conv8_1(out)
         out = self.conv8_2(out)

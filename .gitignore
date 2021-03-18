@@ -1,0 +1,6 @@
+settings.json
+VOCdevkit
+weights
+.idea
+.vscode
+*pyc
